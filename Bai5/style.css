@@ -1,0 +1,52 @@
+body{
+    margin : 0px;
+}
+
+nav{
+    background-color: #0c4ca3;
+  
+}
+ul{
+    display:flex;
+    list-style:none ;
+    justify-content: center;
+    
+}
+li{
+    padding:15px;
+}
+.border{
+    border-right: 1px solid grey;
+}
+.danhmuc-lienket {
+    color: white;
+    text-decoration: none ;
+    /* bỏ gạch chân */
+    font-family: Roboto, Arial, Tahoma;
+    
+}
+.banner-qc{
+    display:flex;
+    justify-content: center;
+    margin:10px 0px;
+
+}
+.qc{
+    display:flex;
+}
+header{
+    border-bottom: 15px solid #f1f1f2;
+}
+.tintuc{
+    font-family: Roboto, Arial, Tahoma;
+    color: blue;
+    
+    border-bottom: 3px solid #2d2de5;
+    
+}
+.tieu{
+    display:flex;
+}
+.them{
+    justify-content:center ;
+}
