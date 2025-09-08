@@ -1,0 +1,37 @@
+body{
+    margin:0;
+}
+header{
+    background-color: black;
+    padding: 5%;
+}
+.header{
+    justify-content: center;
+    display:flex;
+    color:aliceblue
+}
+.main{
+    background-color: black;
+    display: flex;
+}
+.noidungtrai{
+    width: 20%;
+   height: 1000px;
+    background-color: rgb(57, 69, 235);
+    border-radius: 10px;
+    margin: 2px;
+}
+.noidunggiua{
+    width: 50%;
+    height: 1000px;
+    background-color: rgb(12, 238, 106);
+    border-radius: 10px;
+    margin: 2px;
+}
+.noidungphai{
+    width: 30%;
+    height: 1000px;
+    background-color: rgb(218, 130, 15);
+    border-radius: 10px;
+    margin: 2px;
+}
