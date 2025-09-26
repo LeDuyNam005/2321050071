@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let donHang={
+            maDonHang: "abc",
+            thongTinKhachHang:{
+                hoTen:"Lê Duy Nam",
+                sdt:"0987496708",
+                thanThiet:"true"
+            },
+            danhSachSanPham:{
+                maSP1:"cf",
+                tenSP1:"Cà phê",
+                soLuong1:10,
+                giaTien1:10000,
+                maSP2:"mc",
+                tenSP2:"matcha",
+                soLuong2:13,
+                giaTien2:15000,
+                maSP3:"TS",
+                tenSP3:"trà sữa",
+                soLuong3:15,
+                giaTien3:30000
+
+            },
+            thanhToan:true,
+            diaChi:"18-Phố Viên,Cổ nhuế 2"
+        }
+        let tongGiaTriDonHang=((donHang.danhSachSanPham.giaTien1*donHang.danhSachSanPham.soLuong1)
+                                + (donHang.danhSachSanPham.giaTien2*donHang.danhSachSanPham.soLuong2)
+                                +(donHang.danhSachSanPham.giaTien3*donHang.danhSachSanPham.soLuong3)
+                                );
+        document.writeln("Tổng cộng : "+tongGiaTriDonHang);
+
+        //STRING
+        let hoTen="Le Duy Nam";
+        document.writeln("<br> độ dài chuỗi là : "+hoTen.length);
+        document.writeln("<br> vị trí thứ 0 :"+ hoTen[0]);
+            //CẮT CHUỖI
+        document.writeln("<br> cắt ở vị trí thứ 3-5 : "+hoTen.slice(3,5));
+        document.writeln("<br> đổi vị trí chuỗi : "+hoTen.replace("Nam", "Nảm"));
+
+        document.writeln("<br> viết hoa tất cả : "+hoTen.toUpperCase());
+        document.writeln("<br> viết thường tất cả : "+hoTen.toLowerCase());
+
+        document.writeln("<br> tìm vị trí của kí tự a :"+hoTen.indexOf("a"));
+
+        document.writeln("<br> có tồn tại kí tự a :"+hoTen.includes("a"));
+
+        //tách chuỗi thành 1 mảng
+
+        myString="Hello";
+
+       document.writeln("<br> tách chuôi tại kí tự trong ngoặc kép : "+ myString.split(''));
+
+        document.writeln("<br> kiểm tra có bắt đầu bằng... : "+ hoTen.startsWith('Le'));
+
+        //đổi kiểu
+
+        //hàm date
+        let toDay= new Date();
+        let today = new Date('2023-09-26');
+
+        // lấy ra năm getFullYear
+        // lấy ra tháng getMonth
+        //lấy ra ngày getDate()
+        //lấy giờ getHours
+        document.writeln("<br>"+today);
+        </script>
+</body>
+</html>
