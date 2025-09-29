@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Mảng
+        let arr = [1,2,3,4,'a' ,'b','c',3];
+        //Kiểm tra có phải mảng hay không
+        //document.writeln(Array.isArray(arr));
+
+        //document.writeln(arr.length);//độ dài
+        //document.writeln(arr.indexOf(3));//trả về vị trí index đầu tiên khi tìm thấy
+        //document.writeln(arr.lastIndexOf(3));//trả về vị trí index cuối  khi tìm thấy
+        
+        //Thay đổi giá trị của 1 mảng
+
+        arr[3] = 6;
+        //document.writeln(arr);
+
+        let a, b,c,d;
+        a  = [1,2,3];
+        b = "javaScript";
+        c = [42, 'JS'];
+        d= a.concat(b,c);
+        //d =d.join("-"); // chuyển mảng thành chuỗi cách nhau bởi kí tự trong ngoặc kép
+
+        d.pop();//xóa đi phần tử cuối cùng trong mảng
+        
+        d.push("Nam");//thêm vào cuối mảng
+
+        d.reverse(); //đảo mảng
+        d.shift();//xóa phần tử đầu tiên
+        d.unshift(33);//thêm phần tử vào đầu mảng
+
+        
+        
+        let so = '10000000000000000001';
+        
+
+        
+        document.writeln(d); 
+        document.writeln("<br>");
+        if(so % 2 == 0) document.writeln("so "+so+ " la so chan"); 
+        else document.writeln("so "+so+" La so le"); 
+
+        let now = new Date().getHours();
+        if(now >= 5 && now<= 10){
+            document.writeln("Chào buổi sáng");
+        }else if(now >10 && now<= 13){
+            document.writeln("Chào buổi trưa");
+        }else if(now >13 && now<= 17){
+            document.writeln("Chào buổi chiều");
+        }else if(now >17 && now<= 22){
+            document.writeln("Chào buổi tối");
+        }else {
+            document.writeln("Chào buổi đêm");
+        }
+        
+
+        let A = 9;
+        let B  = 8.5;
+        let C = 10;
+        
+        tong = A*0.6 +B*0.3 + C*0.1;
+        if(A>=0 && A<=10 && B>=0 && B<=10 && C>=0 && C<=10 ){
+            if(tong >8 && tong <=10){
+                document.writeln("Được điểm A");
+            }else if(tong >7 && tong <=8){
+                document.writeln("Được điểm B");
+            }else if(tong >5 && tong <=7){
+                document.writeln("Được điểm C");
+            }else if(tong >4 && tong <=5){
+                document.writeln("Được điểm D");
+            }else {
+                document.writeln("Được điểm F");
+            }
+        }else {
+            document.writeln("Điểm không hợp lệ");
+        }
+        
+
+
+    </script>
+</body>
+</html>
