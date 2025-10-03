@@ -65,24 +65,38 @@
         let B  = 8.5;
         let C = 10;
         
-        tong = A*0.6 +B*0.3 + C*0.1;
-        if(A>=0 && A<=10 && B>=0 && B<=10 && C>=0 && C<=10 ){
-            if(tong >8 && tong <=10){
-                document.writeln("Được điểm A");
-            }else if(tong >7 && tong <=8){
-                document.writeln("Được điểm B");
-            }else if(tong >5 && tong <=7){
-                document.writeln("Được điểm C");
-            }else if(tong >4 && tong <=5){
-                document.writeln("Được điểm D");
-            }else {
-                document.writeln("Được điểm F");
-            }
-        }else {
-            document.writeln("Điểm không hợp lệ");
-        }
+        diem = A*0.6 +B*0.3 + C*0.1;
         
-
+        if (A < 0 || A > 10 || B < 0 || B > 10 || C < 0 || C > 10) {
+					document.writeln("<br>  Điểm thành phần không hợp lệ (phải từ 0 đến 10)");
+				} else {
+					
+					if (diem < 0 || diem > 10) {
+						document.writeln("<br>  Điểm tổng không hợp lệ (phải từ 0 đến 10)");
+					} else {
+						if (diem >= 9 && diem <= 10) {
+							document.writeln("<br> Điểm A+");
+						} else if (diem >= 8 && diem < 9) {
+							document.writeln("<br> Điểm A");
+						} else if (diem >= 7 && diem < 8) {
+							document.writeln("<br> Điểm B+");
+						} else if (diem >= 6.5 && diem < 7) {
+							document.writeln("<br> Điểm B");
+						} else if (diem >= 5.5 && diem < 6.5) {
+							document.writeln("<br> Điểm C+");
+						} else if (diem >= 5 && diem < 5.5) {
+							document.writeln("<br> Điểm C");
+						} else if (diem >= 4.5 && diem < 5) { 
+							document.writeln("<br> Điểm D+");
+						} else if (diem >= 4 && diem < 4.5) {
+							document.writeln("<br> Điểm D");
+						} else {
+							document.writeln("<br> Điểm F");
+						}
+					}
+				}
+        
+            
 
     </script>
 </body>
