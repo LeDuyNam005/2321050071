@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            height:500px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+        input{
+            margin-top: 10px;
+            width:90%;
+            height:40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding-left:10px;
+        }
+        button{
+            padding :10px 20px;
+            color:white;
+            background-color: rgb(56, 56, 56);
+            border-radius: 10px;
+        }
+        .container{
+            background-color: white;
+            border-radius: 15px;
+            padding:10px;
+            width:400px;
+            padding :15px 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Tính điểm chữ</h1>
+        Nhập điểm A : <input type="number" id="diemA" > <br>
+        Nhập điểm B : <input type="number" id="diemB" > <br>
+        Nhập điểm C : <input type="number" id="diemC" > <br>
+
+        <button onclick="tinhDiem()">Tính điểm</button> <br> 
+        <br>
+        Kết Quả : <input id="kq">
+    </div>
+    <script>
+        function tinhDiem(){
+            let A = parseFloat(document.getElementById("diemA").value);
+            let B = parseFloat(document.getElementById("diemB").value);
+            let C = parseFloat(document.getElementById("diemC").value);
+            let diem  = A*0.6 + B*0.3 + C*0.1;
+            if (A < 0 || A > 10 || B < 0 || B > 10 || C < 0 || C > 10 || isNaN(A)|| isNaN(B) || isNaN(C)) {
+					document.getElementById("kq").value=" Điểm thành phần không hợp lệ";
+				} else {
+					
+					if (diem < 0 || diem > 10) {
+						document.getElementById("kq").value=" Điểm tổng không hợp lệ";
+					} else {
+						if (diem >= 9 && diem <= 10) {
+							document.getElementById("kq").value=" Điểm A+";
+						} else if (diem >= 8 && diem < 9) {
+							document.getElementById("kq").value=" Điểm A";
+						} else if (diem >= 7 && diem < 8) {
+							document.getElementById("kq").value=" Điểm B+";
+						} else if (diem >= 6.5 && diem < 7) {
+							document.getElementById("kq").value=" Điểm B";
+						} else if (diem >= 5.5 && diem < 6.5) {
+							document.getElementById("kq").value="Điểm C+";
+						} else if (diem >= 5 && diem < 5.5) {
+							document.getElementById("kq").value=" Điểm C";
+						} else if (diem >= 4.5 && diem < 5) { 
+							document.getElementById("kq").value="Điểm D+";
+						} else if (diem >= 4 && diem < 4.5) {
+							document.getElementById("kq").value="Điểm D";
+						} else {
+							document.getElementById("kq").value=" Điểm F";
+					}
+				}
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:800px;
+            height:500px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            margin-top: 10px;
+            width:300px;
+            height:40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Tính tổng</h1>
+        <div>
+        <input id="so1" type ="number" placeholder="nhập số thứ nhất">
+    </div>
+    <div>
+        <input id="so2" type ="number" placeholder="nhập số thứ 2">
+    </div>
+    <button onclick="tong()">Tính tổng</button><br>
+    Kết quả :<input type="number" id="ketqua" >
+    </div>
+    
+    <script>
+     function tong(){
+        let so1 =  parseFloat(document.getElementById("so1").value);
+        let so2 =  parseFloat(document.getElementById("so2").value);
+        let kq = so1 + so2;
+        document.getElementById("ketqua").value = kq;
+     }
+
+    </script>
+</body>
+</html>
