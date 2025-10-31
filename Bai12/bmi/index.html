@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            text-align: center;
+            background-color: aqua;
+            width: 400px;
+            height:400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            padding:10px 20px;
+            margin-top: 10px;
+            border:none;
+            border-radius: 10px;
+        }
+        button{
+            padding:10px 20px;
+            margin-top: 50px;
+            border:none;
+            border-radius: 10px;
+        }
+        .hienthi{
+            width: 300px;
+            height:600px;
+            border:none;
+            border-radius: 10px;
+            background-color: bisque;   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nen">
+            chiều cao : <input id="chieu-cao"><br>
+        Cân nặng : <input id ='can-nang'><br>
+        <button onclick="bmi()">Kiểm tra chỉ số bmi</button>
+        </div>
+        
+    </div>
+    <div class="hienthi">
+            <img id ='anh' width="99%" height="99%" src="" >
+    </div>
+    <script>
+        function bmi(){
+            let cao = document.getElementById('chieu-cao').value;
+            let nang = document.getElementById('can-nang').value;
+
+            let kq = nang /(cao * cao);
+            kq = kq.toFixed(2);
+            
+            if(kq < 18.5){
+                document.getElementById('anh').src='thieu-can.jpg';
+            }else if(kq <= 24.9&& kq >=18.5){
+                document.getElementById('anh').src='binhthuong.jpg';
+            }else if(kq <= 29.9&& kq >=25){
+                document.getElementById('anh').src='thua-can.jpg';
+            }else if(kq <= 30&& kq >=39.9){
+                document.getElementById('anh').src='beophicapdo1-2.jpg';
+            }else{
+                document.getElementById('anh').src='beophi-nang.jpg';
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>

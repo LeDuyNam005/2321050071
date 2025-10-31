@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            padding :10px 20px;
+            border-radius: 10px;
+            border:none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Ví dụ về thay đổi chế độ
+        </h1>
+        <img class="anh" src="mat-troi.jpg" height="300px" width="300px" alt="">
+        <h1>Chế độ sáng</h1>
+        <button onclick="doiCheDo('sang')">Thay đổi chế độ</button>
+    </div>
+    <script>
+        let sang =true;
+         function doiCheDo(){
+            if(sang == true ){
+           
+            document.getElementsByTagName('body')[0].style = "background-color:black";
+            document.getElementsByTagName('h1')[0].style ="color: white";
+            document.getElementsByTagName('h1')[1].style ="color: white";
+             document.getElementsByTagName('h1')[1].innerHTML ="Chế độ tối";
+            document.getElementsByClassName('anh')[0].src="mat-trang.jpg";
+            sang = false;
+        
+        }else{
+            
+            document.getElementsByTagName('body')[0].style = "background-color:White";
+            document.getElementsByTagName('h1')[0].style ="color: black";
+            document.getElementsByTagName('h1')[1].style ="color: black";
+             document.getElementsByTagName('h1')[1].innerHTML ="Chế độ sáng";
+            document.getElementsByClassName('anh')[0].src="mat-troi.jpg";
+            sang = true;
+        
+        }
+        
+        
+    }
+    </script>
+</body>
+</html>

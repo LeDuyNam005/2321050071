@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            width:800px;
+         
             height:500px;
             display:flex;
             justify-content: center;
@@ -14,32 +14,59 @@
         }
         input{
             margin-top: 10px;
-            width:300px;
+            width:98%;
             height:40px;
             border-radius: 10px;
             margin-bottom: 10px;
+        }
+         button{
+            padding :10px 20px;
+            color:white;
+            background-color: rgb(56, 56, 56);
+            border-radius: 10px;
+        }
+        .container{
+            background-color: gray;
+            margin:auto;
+            padding:20px;
+            border-radius: 10px;
+            color :white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     
-    <div>
-        <h1>Tính tổng</h1>
+    <div class ="container">
+        <div>
+        <h1>Máy tính đơn giản </h1>
         <div>
         <input id="so1" type ="number" placeholder="nhập số thứ nhất">
     </div>
     <div>
         <input id="so2" type ="number" placeholder="nhập số thứ 2">
     </div>
-    <button onclick="tong()">Tính tổng</button><br>
-    Kết quả :<input type="number" id="ketqua" >
+    <button onclick="tong('+')">Tính tổng</button>
+    <button onclick="tong('-')">Tính hiệu</button>
+    <button onclick="tong('*')">Tính tich</button>
+    <button onclick="tong('/')">Tính thương</button><br><br>
+    <input type="number" id="ketqua" placeholder="Kết Quả">
     </div>
     <p></p>
+    </div>
     <script>
-     function tong(){
+     function tong(so){
         let so1 =  parseFloat(document.getElementById("so1").value);
         let so2 =  parseFloat(document.getElementById("so2").value);
-        let kq = so1 + so2;
+        if(so ==='+'){
+            kq = so1 + so2;
+        }else if(so ==='-'){
+            kq = so1 - so2;
+        }else if(so ==='*'){
+            kq = so1 * so2;
+        }else {
+            kq = so1 / so2;
+        }
         document.getElementById("ketqua").value = kq;
      }
 
