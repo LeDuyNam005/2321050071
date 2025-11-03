@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+}
+
+.danhmuc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 15%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+.danhmuc-lienket a:hover {
+    color: #ff6500;
+}
+
+.chucnang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.muagoi {
+    background-color: rgb(255, 98, 0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.dangnhap {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+main {
+    background-color: #131314;
+    color: white;
+    width: 100%;
+}
+
+.quangcao {
+    display: flex;
+    justify-content: center;
+    padding-top: 72.99px;
+}
+
+.container {
+    width: 70%;
+    height: 2000px;
+    background-color: black;
+    margin: auto;
+   
+}
+
+.banner {
+    width: 98%;
+}
+
+.qc {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.tentheloai {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.theloai-danhsach{
+}
+
+.theloai-danhsach-noidung{
+    display: flex;
+    height: 126.44px;
+    width: 100%;
+}
+
+.theloai-box{
+    position: relative;
+    width: 20%;
+}
+
+.theloai-box img{
+    width: 98%;
+    margin: 5px;
+    margin-left: 0px;
+    filter: brightness(70%);
+}
+
+.overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.top10-films{
+}
+
+.top10-films-content{
+    height: 146px;
+    width: 100%;
+}
+
+.films-by-topic{   
+}
+
+.films-by-topic-content{
+    display: flex;
+    height: 363px;
+    width: 100%;
+}
+
+.film-box{
+    position: relative;
+    width: 20%;
+    height: 95%;
+}
+
+.film-box-img{
+    width: 95%;
+    height: 85%;
+    padding-right: 12px;
+    border-radius: 5px;
+}
+
+.film-box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.film-box-img img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.film-box span{
+    position: absolute;
+    bottom: 15px;
+    font-weight: bolder;
+}
+
+.banner-phim{
+    
+    width: 100%;
+    height:500px;
+    position: relative;
+}
+.banner-tren{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.banner-duoi{
+     position: absolute;
+    display:flex;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;              
+    z-index: 2;           
+    background: rgba(11, 11, 11, 0.485);
+
+   
+    padding:0px 10px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #131314;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+}
+
+.footer-content{
+    width: 70%;
+    height: auto;
+    background-color:#131314;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row{
+    border: none;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid rgb(#131314);
+}
+
+.footer-content-text{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.footer-content-text p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color:#d2d0d0;
+}
+
+.large-content{
+    height: 100%;
+    width: 23%;
+    background-color:#131314;
+}
+
+.justifier-icon{ 
+    width: 100%;   
+    height: auto;
+    justify-content: left;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.large-content-detail{
+    padding-bottom: 10px;
+}
+
+.large-content-detail p{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    color: #9b9b9b;
+}
+
+
+.small-content{
+    height: 100%;
+    width: 18%;
+    background-color:#131314;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.small-content p{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    color: #9b9b9b;
+}
+
+.small-content-text{
+    width: 100%;
+    height: 85%;
+    text-align: left;
+}
+
+.footer-content-text a:hover{
+    color: orange;
+}
+
+.small-content-text-detail{
+    padding-bottom: 10px;
+}
+
+.small-content-text-detail a{
+    color:#d2d0d0;
+    font-size:small;
+}
+
+
