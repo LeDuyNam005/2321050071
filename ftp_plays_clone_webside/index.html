@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Phim Lẻ 2025 - Xem Phim Lẻ Hay Mới Nhất</title>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         h2{
-            justify-content: center;
+            margin-left: 10px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -54,15 +57,66 @@
                     <img class="banner" src="images/muado_poster2.jpg" width="100%" height="100%" alt="">
                 </div>
                 <div class="banner-duoi">
-                    <h3>Mưa đỏ</h3>
-                    <br>
-                    <p>năm phát hành<span> 2025</span></p>
+                    <div class="noidung-banner-duoi">
+                        <span id="nam">2025</span>  •  <span id="tuoi"> T16 </span>  •  <span id="time">2h</span>  •  <span id="quocgia">Việt Nam</span>
+                        <div class="btn-duoi">
+                            <button class="xemngay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <a id="xem" href="#">Xem Ngay</a>
+                            </button>
+                            <button onclick="chonphim(id)" class="xemngay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <a id="trailer" href="https://www.youtube.com/watch?v=NDonnQvCdMw" >Trailer</a>
+                            </button>
+                        </div>
+                        
+                    </div>
                 </div>
+                    
+                    
             </div>
+            
 
             <!-- danh sach the loai phim -->
             <div class="theloai">
-
+                 <!-- Phâm chiếu rạp -->
+                <div class="films-by-topic">
+                    <div class="title">
+                        <h2>Phim chiếu rạp</h2>
+                    </div>
+                    <div class="films-by-topic-content">
+                        <div  class="film-box">
+                            <div  class="film-box-img">
+                                <a href="#"><img onclick="chonPhim(2)" src="images/film_posters/haimuoi.jpg" alt=""></a>
+                            </div>
+                            <span>Hai muối</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img onclick="chonPhim(3)" src="images/film_posters/bogia.jpg" alt=""></a>
+                            </div>
+                            <span>Bố già</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img onclick="chonPhim(4)" src="images/film_posters/codauhaomon.jpg" alt=""></a>
+                            </div>
+                            <span>Cô dâu hào môn</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img onclick="chonPhim(5)" src="images/film_posters/mai.jpg" alt=""></a>
+                            </div>
+                            <span>Mai</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img onclick="chonPhim(6)" src="images/film_posters/ngoinhabuombuom.jpg" alt=""></a>
+                            </div>
+                            <span>Ngôi nhà bươm bướm</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- cac the loai pho bien -->
                 <div class="theloai-danhsach">
                     <div class="title">
@@ -112,44 +166,8 @@
                     </div>
                 </div>
 
-                <!-- Am ap ben nguoi than -->
-                <div class="films-by-topic">
-                    <div class="title">
-                        <h2>Ấm áp bên người thân</h2>
-                    </div>
-                    <div class="films-by-topic-content">
-                        <div  class="film-box">
-                            <div  class="film-box-img">
-                                <a href="#"><img onclick="chonPhim(2)" src="images/film_posters/haimuoi.jpg" alt=""></a>
-                            </div>
-                            <span>Hai muối</span>
-                        </div>
-                        <div class="film-box">
-                            <div class="film-box-img">
-                                <a href="#"><img src="images/film_posters/bogia.jpg" alt=""></a>
-                            </div>
-                            <span>Bố già</span>
-                        </div>
-                        <div class="film-box">
-                            <div class="film-box-img">
-                                <a href="#"><img src="images/film_posters/codauhaomon.jpg" alt=""></a>
-                            </div>
-                            <span>Cô dâu hào môn</span>
-                        </div>
-                        <div class="film-box">
-                            <div class="film-box-img">
-                                <a href="#"><img src="images/film_posters/mai.jpg" alt=""></a>
-                            </div>
-                            <span>Mai</span>
-                        </div>
-                        <div class="film-box">
-                            <div class="film-box-img">
-                                <a href="#"><img src="images/film_posters/ngoinhabuombuom.jpg" alt=""></a>
-                            </div>
-                            <span>Ngôi nhà bươm bướm</span>
-                        </div>
-                    </div>
-                </div>
+               
+                
             </div>
 
         </div>
