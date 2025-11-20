@@ -52,6 +52,7 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+    
 }
 
 .muagoi {
@@ -59,8 +60,9 @@ a {
     border: none;
     color: white;
     padding: 10px 20px;
-    width: 100px;
+    width: 120px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .dangnhap {
@@ -68,6 +70,7 @@ a {
     color: white;
     border: none;
     width: 100px;
+    font-weight: bold;
 }
 
 main {
@@ -85,7 +88,7 @@ main {
 .container {
     width: 70%;
     height: 2000px;
-    background-color: black;
+    background-color: 131314;
     margin: auto;
    
 }
